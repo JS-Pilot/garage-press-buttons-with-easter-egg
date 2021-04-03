@@ -34,12 +34,15 @@ basic.forever(function () {
         while (index_array < RIGHT.length) {
             if (LIST[index_array] != RIGHT[index_array]) {
                 entered_code_is_correct = false
+                break;
             }
             index_array += 1
         }
         if (entered_code_is_correct == true) {
             music.playMelody("C D E F G A B C5 ", 120)
             LIST = [0]
+            A_NUMBER = 0
+            B_NUMBER = 0
         }
     }
 })
